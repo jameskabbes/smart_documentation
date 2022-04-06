@@ -1,7 +1,3 @@
-#
-Data/
-*.wiki
-
 # Word temporary
 ~$*.doc*
 
@@ -10,6 +6,7 @@ Data/
 
 # PowerPoint temporary
 ~$*.ppt*
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -21,9 +18,6 @@ __pycache__/
 
 # C extensions
 *.so
-
-# Databases
-*.db
 
 # Distribution / packaging
 .Python

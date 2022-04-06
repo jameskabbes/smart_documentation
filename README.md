@@ -1,4 +1,4 @@
-[Documentation](https://jameskabbes.github.io/smart_documentation/)
+[GitHub Pages](https://jameskabbes.github.io/smart_documentation)
 
 # smart_documentation
-Automatically generate documentation for any Python repository
+
