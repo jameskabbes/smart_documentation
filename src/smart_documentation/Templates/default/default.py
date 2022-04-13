@@ -1,7 +1,7 @@
-from smart_documentation.BaseDocumentation import BaseDocumentation
+from smart_documentation import BaseDocumentation
 from pypi_builder.Templates.default.default import Package
-import dir_ops.dir_ops as do
-import py_starter.py_starter as ps
+import dir_ops as do
+import py_starter as ps
 import os
 
 class Documentation( BaseDocumentation, Package ):

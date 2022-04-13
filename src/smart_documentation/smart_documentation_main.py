@@ -1,5 +1,5 @@
-import dir_ops.dir_ops as do
-import py_starter.py_starter as ps
+import dir_ops as do
+import py_starter as ps
 import smart_documentation
 
 def get_template():
@@ -12,12 +12,9 @@ def get_template():
     module = module_Path.import_module()
     return module.Documentation
 
-def run( *args ):
+def generate( ):
 
     Documentation_template = get_template()
-    R = Documentation_template( smart_documentation.cwd_Dir )
-    R.generate( overwrite = "overwrite" in args )
-
-if __name__ == '__main__':
-    run()
+    R = Documentation_template( smart_documentation._cwd_Dir )
+    R.generate(  )
 

@@ -1,5 +1,5 @@
-from pypi_builder.BasePackage import BasePackage
-import py_starter.py_starter as ps
+from pypi_builder import BasePackage
+import py_starter as ps
 
 
 class BaseDocumentation( BasePackage ):
