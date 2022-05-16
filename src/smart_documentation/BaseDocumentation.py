@@ -1,6 +1,6 @@
 from pypi_builder import BasePackage
 import py_starter as ps
-import pandoc
+import pypandoc
 
 class BaseDocumentation( BasePackage ):
 
@@ -20,6 +20,5 @@ class BaseDocumentation( BasePackage ):
 
         if self.readme_Path.exists():
             md_string = self.readme_Path.read()
-            Doc = pandoc.read( source = md_string, format = 'markdown' )
-            self.readme_rst = pandoc.write( Doc, format = 'rst' )
+            self.readme_rst = pypandoc.convert_text( md_string, 'rst', format = 'md' )
             
