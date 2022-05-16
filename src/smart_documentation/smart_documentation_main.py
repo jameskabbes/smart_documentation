@@ -18,3 +18,6 @@ def generate( ):
     R = Documentation_template( smart_documentation._cwd_Dir )
     R.generate(  )
 
+    md_string = smart_documentation._repo_Dir.join_Path( path = 'README.md' ).read()
+    rst_string = smart_documentation.convert_to_rst( md_string )
+    smart_documentation._repo_Dir.join_Path( path = 'README.rst').write( string = rst_string ) 

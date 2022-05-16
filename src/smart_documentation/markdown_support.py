@@ -1,3 +1,5 @@
+import pandoc
+
 indent = '  '
 
 def heading( string, level = 1 ):
@@ -64,10 +66,12 @@ def ordered_list( string, number, indent_level = 0 ):
 def unordered_list( string, indent_level = 0 ):
     return indent*indent_level + '- {string}'.format(string=string)
 
+def convert_to_rst( string ):
 
+    doc = pandoc.read( source = string, format = 'markdown' )
+    rst_string = pandoc.write( doc, format = 'rst' )
 
-
-
+    return rst_string
 
 
 

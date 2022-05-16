@@ -10,3 +10,4 @@ templates_Dir = do.Dir( _Dir.join( 'Templates' ) )
 
 from .smart_documentation_main import generate
 from .BaseDocumentation import BaseDocumentation
+from .markdown_support import *
