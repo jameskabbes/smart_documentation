@@ -1,6 +1,6 @@
 from pypi_builder import BasePackage
 import py_starter as ps
-import pypandoc
+#import pypandoc
 
 class BaseDocumentation( BasePackage ):
 
@@ -16,9 +16,13 @@ class BaseDocumentation( BasePackage ):
         BasePackage.__init__( self, *args, **joined_kwargs )
         self.convert_readme()
 
-    def convert_readme( self ):
+    def convert_readme( self, output_format = 'rst' ):
+
+        """ Eventually, will convert the README.md contents over to RST and add them to the homepage. pypandoc is giving me trouble atm
 
         if self.readme_Path.exists():
             md_string = self.readme_Path.read()
-            self.readme_rst = pypandoc.convert_text( md_string, 'rst', format = 'md' )
-            
+            self.readme_rst = pypandoc.convert_text( md_string, output_format, format = 'md' )
+        """ 
+
+        pass
