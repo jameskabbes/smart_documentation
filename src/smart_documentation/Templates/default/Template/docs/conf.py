@@ -39,7 +39,7 @@ intersphinx_mapping = {
     "python": ("https://docs.python.org/3/", None),
 }
 
-autosummary_generate = False  # Turn on sphinx.ext.autosummary
+autosummary_generate = True  # Turn on sphinx.ext.autosummary
 autoclass_content = "both"  # Add __init__ doc (ie. params) to class summaries
 html_show_sourcelink = False  # Remove 'view source code' from top of page (for html, not python)
 autodoc_inherit_docstrings = True  # If no docstring, inherit from base class
