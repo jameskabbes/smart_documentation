@@ -8,6 +8,8 @@ if __name__ == '__main__':
             'Templates/default/Template/docs/_templates/*.rst',
             'Templates/default/Template/docs/*.py',
             'Templates/default/Template/docs/*.rst',
+            'Templates/default/Template/docs/Makefile',
+            'Templates/default/Template/docs/make.bat',
             'Templates/github_workflows_yml/Template/.github/workflows/*.yml',
         ]
         }
