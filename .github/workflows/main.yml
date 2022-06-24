@@ -19,6 +19,12 @@ jobs:
     steps:  # steps for the auto-documentation
 
       - uses: actions/checkout@master   # checks out repo so workflow can access it ----TEST THIS----
+      - name: setup virtual environment
+        run: |
+          virtualenv venv
+          venv\Scripts\activate
+
+      - uses: actions/checkout@master   # checks out repo so workflow can access it ----TEST THIS----
       - uses: actions/setup-python@v3   # sets up a python environment for use
       - name: Install dependencies
         run: |                                  
@@ -26,6 +32,20 @@ jobs:
           pip install -U sphinx
           pip install sphinx-autodoc-typehints
           pip install sphinx_rtd_theme
+
+      - uses: actions/checkout@master   
+      - uses: actions/setup-python@v3   
+      - name: Run Sphinx
+        run: |
+          sphinx-quickstart docs
+
+      - uses: actions/checkout@master   
+      - uses: actions/setup-python@v3   
+      - name: Build
+        run: |
+          sphinx-build -b html docs/source/ docs/build/html
+          cd docs
+          make html
 
       - name: Run a one-line script
         run: echo Hello, world!
