@@ -32,4 +32,4 @@ def answers(c):
         pattern=r" Project language",
         response="\n",
     )
-    c.run("sphinx-quickstart docs", watchers=[responder1, responder2, responder3,responder4, responder5])
+    c.run("sphinx-quickstart docs", watchers=[responder1, responder2, responder3, responder4, responder5])
