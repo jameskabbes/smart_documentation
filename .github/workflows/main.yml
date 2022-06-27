@@ -39,9 +39,9 @@ jobs:
 
       - uses: actions/checkout@master   
       - uses: actions/setup-python@v3   
-      - name: Run Sphinx
+      - name: Run Sphinx & Auto-fill Prompts
         run: |
-          sphinx-quickstart docs
+          invoke answers
 
       - uses: actions/checkout@master   
       - uses: actions/setup-python@v3   
