@@ -1,7 +1,5 @@
 from invoke import task
-from invoke.invoke.watchers import Responder
-from invoke.tests.watchers import Responder_
-# from invoke.watchers import Responder
+from invoke.watchers import Responder
 
 # ORIGINAL
 #@task
@@ -14,7 +12,7 @@ from invoke.tests.watchers import Responder_
 
 @task
 def answers(c):
-    responder1 = Responder_(
+    responder1 = Responder(
         pattern=r" Separate source and build directories",
         response="n\n",
     )
