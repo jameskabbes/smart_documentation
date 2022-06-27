@@ -33,6 +33,10 @@ jobs:
           pip install sphinx-autodoc-typehints
           pip install sphinx_rtd_theme
 
+          pip install invoke
+          invoke --version 
+      
+
       - uses: actions/checkout@master   
       - uses: actions/setup-python@v3   
       - name: Run Sphinx
