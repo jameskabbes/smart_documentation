@@ -24,6 +24,8 @@ jobs:
       #    virtualenv venv
       #    venv\Scripts\activate
 
+
+      # this part makes sure sphinx is installed
       - uses: actions/checkout@master   # checks out repo so workflow can access it ----TEST THIS----
       - uses: actions/setup-python@v3   # sets up a python environment for use
       - name: Install dependencies
@@ -36,13 +38,14 @@ jobs:
           pip install invoke
           invoke --version 
       
-
+      # this part will call sphinx and automatically answer the prompts
       - uses: actions/checkout@master   
       - uses: actions/setup-python@v3   
       - name: Run Sphinx & Auto-fill Prompts
         run: |
           invoke answers
 
+      # this part automatically generates the rst files
       - uses: actions/checkout@master   
       - uses: actions/setup-python@v3   
       - name: Build
@@ -50,6 +53,7 @@ jobs:
           sphinx-build -b html docs/source/ docs/build/html
           cd docs
           make html
+
 
       - name: Run a one-line script
         run: echo Hello, world!
