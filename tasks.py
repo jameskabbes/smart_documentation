@@ -14,7 +14,7 @@ from invoke.watchers import Responder
 def answers(c):
     responder1 = Responder(
         pattern=r" Separate source and build directories",
-        response="n\n",
+        response="y\n",
     )
     responder2 = Responder(
         pattern=r" Project name",
