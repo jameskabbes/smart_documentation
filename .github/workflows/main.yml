@@ -37,13 +37,14 @@ jobs:
 
           pip install invoke
           invoke --version 
+          invoke answers
       
       # this part will call sphinx and automatically answer the prompts
       #- uses: actions/checkout@master   
       #- uses: actions/setup-python@v3   
-      - name: Run Sphinx & Auto-fill Prompts
-        run: |
-          invoke answers
+      #- name: Run Sphinx & Auto-fill Prompts
+      #  run: |
+      #    invoke answers
 
       # this part automatically generates the rst files
       - uses: actions/checkout@master   
