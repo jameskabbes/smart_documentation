@@ -18,11 +18,11 @@ jobs:
     
     steps:  # steps for the auto-documentation
 
-      #- uses: actions/checkout@master   # checks out repo so workflow can access it ----TEST THIS----
-      #- name: setup virtual environment
-      #  run: |
-      #    virtualenv venv
-      #    venv\Scripts\activate
+      - uses: actions/checkout@master   # checks out repo so workflow can access it ----TEST THIS----
+      - name: setup virtual environment
+        run: |
+          virtualenv venv
+          venv\Scripts\activate
 
 
       # this part makes sure sphinx is installed
