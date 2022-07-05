@@ -5,7 +5,7 @@ name: Auto-doc
 on:
   # Triggers the workflow on push events but only for the "main" branch
   push:
-    branches: [ "base" ]
+    branches: [ "main" ]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -23,6 +23,7 @@ jobs:
       #  run: |
       #    virtualenv venv
       #    venv\Scripts\activate
+
 
 
       # this part makes sure sphinx is installed
