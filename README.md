@@ -57,7 +57,7 @@ docs/source/initial_write.py
 project/load_config.py
 ```
 
-- If you need to update your personal access token, do this:
+- If you need to update your personal access token, do these commands:
 
 ```
 git remote remove origin
