@@ -48,10 +48,20 @@ push your code to main on github
 ### Information
 
 - The project to be documented is located in the `project` root directory.
+- Your personal access token must have `workflow` enabled.
 - Required files:
 
 ```
 populate_config.py
 docs/source/initial_write.py
 project/load_config.py
+```
+
+- If you need to update your personal access token, do this:
+
+```
+git remote remove origin
+git remote add origin https://<TOKEN>@github.com/<USERNAME>/<REPO>.git
+git remote -v
+git push origin main
 ```
