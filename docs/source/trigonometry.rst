@@ -1,0 +1,3 @@
+.. automodule:: project.trigonometry
+    :members:
+    
