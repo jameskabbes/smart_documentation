@@ -1,0 +1,1 @@
+[{"project_name": "calculator", "pip_package": "calculator", "theme": "furo", "first_name": "Jacob", "last_name": "Chang", "year": "2022", "desc": "Calculator is a Python library for people who like to do mathematics.", "active": 1, "files": ["project.basic_operations", "project.trigonometry", "project.nested.person", "project.nested.double.hello"]}]
