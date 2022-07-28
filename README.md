@@ -65,3 +65,12 @@ git remote add origin https://<TOKEN>@github.com/<USERNAME>/<REPO>.git
 git remote -v
 git push origin main
 ```
+
+### Local Usage Update
+
+```
+venv\Scripts\activate
+update your code
+python commands.py
+doc site will open in a new tab
+```
