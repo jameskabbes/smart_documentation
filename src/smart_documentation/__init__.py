@@ -6,7 +6,5 @@ _src_Dir = _Dir.ascend()                                  #src Dir that is one a
 _repo_Dir = _src_Dir.ascend()                    
 _cwd_Dir = do.Dir( do.get_cwd() )
 
-templates_Dir = do.Dir( _Dir.join( 'Templates' ) )
-
-from .smart_documentation_main import generate
-from .BaseDocumentation import BaseDocumentation
+from .DocumentationGenerator import DocumentationGenerator
+from .Client import Client
