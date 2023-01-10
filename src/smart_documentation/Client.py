@@ -2,7 +2,6 @@ import smart_documentation
 import pypi_builder
 import kabbes_user_client
 import py_starter as ps
-import datetime
 
 class Client( smart_documentation.DocumentationGenerator, pypi_builder.Client ):
 
