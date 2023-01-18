@@ -1,20 +1,23 @@
 import smart_documentation
+import kabbes_client
 import pypi_builder
-import kabbes_user_client
-import py_starter as ps
 
-class Client( smart_documentation.DocumentationGenerator, pypi_builder.Client ):
+class Client( smart_documentation.DocumentationGenerator ):
 
-    BASE_CONFIG_DICT = {
-        "_Dir": smart_documentation._Dir
-    }
+    _BASE_DICT = {}
 
-    def __init__( self, dict={}, **kwargs ):
+    def __init__( self, dict={} ):
 
-        pypi_builder.Client.__init__( self )
-        dict = ps.merge_dicts( Client.BASE_CONFIG_DICT, dict )
-        overwrite_cfg = kabbes_user_client.Client( dict=dict, **kwargs ).cfg
-        self.cfg.merge(overwrite_cfg)
+        d = {}
+        d.update( Client._BASE_DICT )
+        d.update( dict )
+
+        self.Package = kabbes_client.Package( smart_documentation._Dir, dict=d )
+        cfg_sd = self.Package.cfg
+        cfg_pypi = pypi_builder.Client().cfg
+
+        cfg_pypi.merge( cfg_sd )
+        self.cfg = cfg_pypi
 
         smart_documentation.DocumentationGenerator.__init__( self )
 
