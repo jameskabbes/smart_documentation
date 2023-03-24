@@ -20,6 +20,7 @@ jobs:
 
       - name: add docs/.nojekyll
         run: |
+          mkdir docs
           touch docs/.nojekyll
 
       - name: Generate Smart Doc files
