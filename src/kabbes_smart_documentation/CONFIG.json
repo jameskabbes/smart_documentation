@@ -9,5 +9,6 @@
             }
         }
     },
-    "html_theme": "sphinx_rtd_theme"
+    "html_theme": "sphinx_rtd_theme",
+    "release": "{{kabbes_repository_generator.repo.version}}"
 }

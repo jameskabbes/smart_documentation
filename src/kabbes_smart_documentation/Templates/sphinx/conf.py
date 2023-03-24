@@ -22,7 +22,7 @@ copyright = '2023, {-{author}-}'
 author = '{-{author}-}'
 
 # The full version, including alpha/beta/rc tags
-release = '{-{repo.version}-}'
+release = '{-{release}-}'
 
 
 # -- General configuration ---------------------------------------------------
