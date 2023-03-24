@@ -1,6 +1,6 @@
 sphinx
 sphinx-autodoc-typehints
-sphinx_rtd_themekabbes_client
+sphinx_rtd_theme
 
 kabbes_client
 kabbes_config
