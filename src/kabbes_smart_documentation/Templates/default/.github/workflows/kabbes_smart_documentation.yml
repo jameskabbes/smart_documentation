@@ -24,7 +24,7 @@ jobs:
 
       - name: Generate Smart Doc files
         run: |
-          python -m kabbes_smart_documentation template.name=sphinx
+          python -m kabbes_smart_documentation kabbes_smart_documentation.template.name=sphinx
 
       - uses: actions/checkout@master
         with:
