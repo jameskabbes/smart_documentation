@@ -18,14 +18,14 @@ jobs:
           python -m pip install kabbes_smart_documentation
           python -m pip install -r requirements.txt
 
+      - name: Generate Smart Doc files
+        run: |
+          python -m kabbes_smart_documentation kabbes_smart_documentation.template.name=sphinx user_profile.profile.first_name={-{first_name}-} user_profile.profile.last_name={-{last_name}-} user_profile.profile.github.username={-{github_username}-} user_profile.profile.pypi.username={-{pypi_username}-} user_profile.profile.email={-{email}-}
+
       - name: add docs/.nojekyll
         run: |
           mkdir docs
           touch docs/.nojekyll
-
-      - name: Generate Smart Doc files
-        run: |
-          python -m kabbes_smart_documentation kabbes_smart_documentation.template.name=sphinx user_profile.profile.first_name={-{first_name}-} user_profile.profile.last_name={-{last_name}-} user_profile.profile.github.username={-{github_username}-} user_profile.profile.pypi.username={-{pypi_username}-} user_profile.profile.email={-{email}-}
 
       - uses: actions/checkout@master
         with:
