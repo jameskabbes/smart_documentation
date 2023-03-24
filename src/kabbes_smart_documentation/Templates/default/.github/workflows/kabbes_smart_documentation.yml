@@ -24,7 +24,6 @@ jobs:
 
       - name: add docs/.nojekyll
         run: |
-          mkdir docs
           touch docs/.nojekyll
 
       - uses: actions/checkout@master
