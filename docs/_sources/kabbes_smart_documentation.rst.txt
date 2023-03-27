@@ -1,0 +1,29 @@
+kabbes\_smart\_documentation package
+====================================
+
+Submodules
+----------
+
+kabbes\_smart\_documentation.Client module
+------------------------------------------
+
+.. automodule:: kabbes_smart_documentation.Client
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+kabbes\_smart\_documentation.DocumentationGenerator module
+----------------------------------------------------------
+
+.. automodule:: kabbes_smart_documentation.DocumentationGenerator
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: kabbes_smart_documentation
+   :members:
+   :undoc-members:
+   :show-inheritance:
