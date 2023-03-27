@@ -1,7 +1,12 @@
-sphinx
-sphinx-autodoc-typehints
-sphinx_rtd_theme
-
+Sphinx
+sphinx-rtd-theme
+sphinx_autodoc_typehints
+sphinxcontrib-applehelp
+sphinxcontrib-devhelp
+sphinxcontrib-htmlhelp
+sphinxcontrib-jsmath
+sphinxcontrib-qthelp
+sphinxcontrib-serializinghtml
 kabbes_client>=0.2.0
 kabbes_config>=0.1.0
 kabbes_pypi_builder>=0.11.0

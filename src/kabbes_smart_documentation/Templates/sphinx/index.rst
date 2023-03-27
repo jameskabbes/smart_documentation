@@ -6,6 +6,9 @@
 Welcome to {-{package_name}-}'s documentation!
 ==============================================
 
+.. autosummary::
+   :toctree: _autosummary
+
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
